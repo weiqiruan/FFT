@@ -1,0 +1,21 @@
+module cf_fft_1024_8_34 (i1, o1);
+input  [2:0] i1;
+output o1;
+wire   n1;
+wire   n2;
+wire   n3;
+wire   n4;
+wire   [2:0] n5;
+wire   n6;
+wire   n7;
+wire   s8_1;
+assign n1 = 1'b0;
+assign n2 = 1'b0;
+assign n3 = 1'b0;
+assign n4 = 1'b0;
+assign n5 = 3'b000;
+assign n6 = i1 == n5;
+assign n7 = n6 ? n4 : s8_1;
+cf_fft_1024_8_35 s8 (n1, n2, n3, i1, s8_1);
+assign o1 = n7;
+endmodule
